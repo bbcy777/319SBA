@@ -1,6 +1,16 @@
 const mongoose = require('mongoose');
-const addressSchema = require('./Address');
+const Cart = require('./Cart');
 const Product = require('./Product');
+
+const addressSchema = new mongoose.Schema({
+    street: String,
+    city: String,
+    zip: Number,
+    country: {
+        type: String,
+        default: 'US'
+    }
+});
 
 const userSchema = new mongoose.Schema({
     name: String,
@@ -13,12 +23,16 @@ const userSchema = new mongoose.Schema({
         required: true,
         lowercase: true,
     },
-    item: {
+    itemForSell: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Product'
     },
     address: addressSchema,
-    userType: String,
+    userType: {
+        type: String,
+        enum: ['buyer', 'seller'],
+        default: 'buyer'
+    },
     createAt: {
         type: Date,
         default: ()=> Date.now(),

@@ -13,6 +13,9 @@ app.use(express.json());
 const sellerRoute = require('./routes/Seller');
 app.use('/sellers', sellerRoute)
 
+const listingRoute = require('./routes/listings');
+app.use('/listings', listingRoute);
+
 app.listen(PORT, () => {
     console.log(`Server is connected to port: ${PORT}`);
 });
