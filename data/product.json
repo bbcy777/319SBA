@@ -1,8 +1,32 @@
 [
     {
-        "name":""
-        "price":
-        "seller":
-        "category":""
+        "name": "apple",
+        "price": 1.99,
+        "category":"Fruit"
+    },
+    {
+        "name": "milk",
+        "price": 4.99,
+        "category": "Dairy"
+    },
+    {
+        "name": "chocolate chip cookie",
+        "price":1.99,
+        "category": "Bakery"
+    },
+    {
+        "name": "pork",
+        "price": 2.99,
+        "category": "Meat"
+    },
+    {
+        "name": "tomato paste",
+        "price": 1.99,
+        "category": "Pantry"
+    },
+    {
+        "name": "pasta",
+        "price": 1.99,
+        "category": "Pantry"
     }
 ]

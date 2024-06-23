@@ -3,6 +3,7 @@ const db = require('../db/conn.js');
 const Product = require('../models/Product.js');
 const Cart = require('../models/Cart');
 const User = require('../models/User.js');
+const { default: mongoose } = require('mongoose');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
@@ -34,6 +35,9 @@ router.post('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         let id = req.params.id;
+        if (!mongoose.Types.ObjectId.isValid(id)){
+            return res.status(400).json({error: 'Invalid user ID'});
+        };
         let result = await User.findById(id);
         if(!result) {
             return res.status(404).json({error: 'User Not Found'});
@@ -50,6 +54,9 @@ router.get('/:id', async (req, res) => {
 //update one user's info
 router.put('/:id', async (req, res) => {
     const userId = req.params.id;
+    if (!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(400).json({error: 'Invalid user ID'});
+    };
     const {name, userName, email, address, userType} = req.body;
     try {
         const updateUser = await User.findByIdAndUpdate(userId, {
@@ -74,6 +81,9 @@ router.put('/:id', async (req, res) => {
 //delete a user
 router.delete('/:id', async (req, res) => {
     const userId = req.params.id;
+    if (!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(400).json({error: 'Invalid user ID'});
+    };
     try {
         const deleteUser = await User.findByIdAndDelete(userId);
         if (!deleteUser) {

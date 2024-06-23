@@ -1,6 +1,9 @@
 ### 319 SBA MongoDB Database Application
 
-## trying to build an online merchandising platform
+## An online grocery platform
+
+- Product route can show all products, add product, delete and update one product.
+- Buyer route has ID parameter that allows all 4 CRUD methods.  
 
 - Both buyer and seller are using the User schema
 - There are cart and product schema for customers' carts and listing products

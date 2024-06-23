@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const productSchema = new mongoose.Schema ({
     name: {
         type: String,
+        lowercase: true,
         required: true,
     },
     price: {
@@ -12,9 +13,12 @@ const productSchema = new mongoose.Schema ({
     seller: {
         type:mongoose.Schema.Types.ObjectId,
         ref: 'User',
-        required: true,
+        // required: true,
     },
-    category: String
+    category: {
+        type: String,
+        lowercase: true,
+    }
 });
 
 const Product = mongoose.model('Product',productSchema);
