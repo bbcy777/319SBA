@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Tim Bee",
+        "userName": "tbeez",
+        "email": "Tim_bee@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Philadelphia",
+            "zip": 19111
+        },
+        "userType": "buyer"
+    },
+    {
+        "name": "Anna Lee",
+        "userName": "luna",
+        "email": "lelu@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Philadelphia",
+            "zip": 19121
+        },
+        "userType": "buyer"
+    },
+    {
+        "name": "Robin Dee",
+        "userName": "birdee",
+        "email": "teetee@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Philadelphia",
+            "zip": 19101
+        },
+        "userType": "buyer"
+    },
+    {
+        "name": "Willium B",
+        "userName": "willy",
+        "email": "bewell@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Philadelphia",
+            "zip": 19112
+        },
+        "userType": "buyer"
+    },
+    {
+        "name": "Tree Free",
+        "userName": "raytree",
+        "email": "ray_tree@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Philadelphia",
+            "zip": 19113
+        },
+        "userType": "seller"
+    },
+    {
+        "name": "Tod Jim",
+        "userName": "TeeJay",
+        "email": "teapot@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Philadelphia",
+            "zip": 19114
+        },
+        "userType": "seller"
+    },
+    {
+        "name": "Tammy",
+        "userName": "tummum",
+        "email": "Tamum@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Philadelphia",
+            "zip": 19119
+        },
+        "userType": "seller"
+    },
+    {
+        "name": "Tom Cartz",
+        "userName": "caaars",
+        "email": "carts@test.com",
+        "address": {
+            "street":"101 main st",
+            "city": "Minneapolis",
+            "zip": 55408
+        },
+        "userType": "seller"
+    }
+]
