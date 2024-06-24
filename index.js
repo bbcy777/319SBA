@@ -27,8 +27,8 @@ app.use((req, res, next) => {
 // const sellerRoute = require('./routes/User');
 // app.use('/sellers', sellerRoute)
 
-const listingRoute = require('./routes/listings');
-app.use('/listings', listingRoute);
+const cartRoute = require('./routes/Cart');
+app.use('/carts', cartRoute);
 
 const productRoute = require('./routes/products');
 app.use('/product', productRoute)
@@ -36,6 +36,9 @@ app.use('/product', productRoute)
 const userRoute = require('./routes/Buyer');
 app.use('/users', userRoute);
 
+app.get('/', (req, res) => {
+    res.send(`Welcome to TJ's online grocery shop!`);
+})
 app.listen(PORT, () => {
     console.log(`Server is connected to port: ${PORT}`);
 });

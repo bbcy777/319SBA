@@ -1,0 +1,32 @@
+[
+    {
+        "user": "667796d8e1ba916da4209a25",
+        "items": [
+            {
+                "product": "6677b8229c135ee1c520e980",
+                "quantity": 2
+            },
+            {
+                "product": "6677b8699c135ee1c520e983",
+                "quantity": 1
+            },
+            {
+                "product": "6677b8839c135ee1c520e987",
+                "quantity": 3
+            }
+        ]  
+    },
+    {
+        "user": "6677c1d16555ada707ef7d5b",
+        "items":[
+            {
+                "product": "6677b8b39c135ee1c520e98a",
+                "quantity":1
+            },
+            {
+                "product": "6677b8b39c135ee1c520e98b",
+                "quantity":2
+            }
+        ]
+    }
+]

@@ -11,10 +11,7 @@ const cartItemSchema = new mongoose.Schema({
         required: true,
         default: 1
     },
-    price: {
-        type: Number,
-        required: true
-    }
+
 });
 
 const cartSchema = new mongoose.Schema ({
@@ -24,14 +21,14 @@ const cartSchema = new mongoose.Schema ({
         required: true
     },
     items: [cartItemSchema],
-    totalQuantity: {
-        type: Number,
-        default: 0
-    },
-    totalPrice: {
-        type: Number,
-        default: 0
-    }
+    // totalQuantity: {
+    //     type: Number,
+    //     default: 0
+    // },
+    // totalPrice: {
+    //     type: Number,
+    //     default: 0
+    // }
 });
 
 const Cart = mongoose.model('Cart', cartSchema)
